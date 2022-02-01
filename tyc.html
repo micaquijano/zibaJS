@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome = 1" />
+    <meta name="ziba" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/imagenes/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Ziba</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="./index.html"
+            ><div class="logo">ziba</div></a
+          >
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#tallesModal"
+                    >Talles</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./bralettes.html">bralettes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./conjuntos.html">conjuntos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./bombachas.html">bombachas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <a
+          target="_blank"
+          href="https://wa.me/+5491126721843?text=Hola,%20vi%20un%20anuncio%20en%20tu%20Web%20y%20quisiera%20realizar%20una%20compra"
+        >
+          <img src="./assets/imagenes/whatsapp.png" class="wsp-icono"
+        /></a>
+      </div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="tallesModal"
+        tabindex="-1"
+        aria-labelledby="tallesModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="tallesModalLabel">
+                Talles
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-black">
+              <div>
+                <div class="text-end">
+                  <span> Las medidas son aproximadas y pueden variar. </span>
+                </div>
+                <div class="chart">
+                  <div class="ui-sizechart-desktop">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Talle</th>
+                          <th>Busto</th>
+                          <th>Cadera</th>
+                          <th>Cintura</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>85</th>
+                          <td>85-89 cm</td>
+                          <td>90-94 cm</td>
+                          <td>64-68 cm</td>
+                        </tr>
+                        <tr>
+                          <th>90</th>
+                          <td>90-94 cm</td>
+                          <td>96-100 cm</td>
+                          <td>70-74 cm</td>
+                        </tr>
+                        <tr>
+                          <th>95</th>
+                          <td>95-99 cm</td>
+                          <td>102-106 cm</td>
+                          <td>76-80 cm</td>
+                        </tr>
+                        <tr>
+                          <th>100</th>
+                          <td>100-104 cm</td>
+                          <td>108-112 cm</td>
+                          <td>82-86 cm</td>
+                        </tr>
+                        <tr>
+                          <th>105</th>
+                          <td>105-109 cm</td>
+                          <td>114-118 cm</td>
+                          <td>88-92 cm</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <main>
+        <div class="content">
+          <h1>Términos y Condiciones</h1>
+          <h3>TÉRMINOS Y CONDICIONES PARA EL USO DEL SITIO WWW.ziba.COM</h3>
+          <p>
+            Los presentes términos y Condiciones Generales (en adelante, los
+            “Términos y Condiciones”) regularán, junto con todas las demás
+            políticas y condiciones que se indiquen en el Sitio -según se define
+            a continuación- y que son incorporados al presente por referencia,
+            la relación entre quien acceda y/o utilice el Sitio (en adelante el
+            “Usuario”) y SARGA S.A. -una compañía del grupo Ziba- (en adelante
+            “Ziba”) y serán de aplicación a toda utilización que el Usuario
+            realice respecto de la página web www.ziba.com (en adelante el
+            “Sitio”) y todos los actos que puedan efectuarse en virtud del uso
+            de la misma.
+          </p>
+          <ol>
+            <li>
+              <b> ACEPTACIÓN DE LOS TÉRMINOS Y CONDICIONES</b><br />
+              El acceso, navegación y uso del Sitio implican el conocimiento y
+              la aceptación de los Términos y Condiciones y de las demás
+              políticas y condiciones que se indiquen en el Sitio los cuales
+              tienen un carácter obligatorio y vinculante. En caso de desacuerdo
+              el usuario deberá abstenerse de utilizar el Sitio y/o los
+              servicios por él ofrecidos.
+            </li>
+
+            <li>
+              <b>MODIFICACIÓN</b><br />
+              Los Términos y Condiciones podrán ser sustituidos o sufrir
+              modificaciones en cualquier momento y a exclusivo criterio de
+              Ziba, y no se requerirá a los Usuarios su consentimiento. Para las
+              transacciones en curso que hayan comenzado con anterioridad a
+              dichas modificaciones, subsistirán las condiciones vigentes al
+              momento de su concertación, a menos que las nuevas modificaciones
+              introducidas fueran más convenientes para el Usuario.<br />
+              Ziba pondrá un aviso en el Sitio alertando a los Usuarios sobre
+              estos cambios, durante un tiempo razonable. Sin perjuicio de lo
+              anterior, los Usuarios son responsables de leer estos Términos y
+              Condiciones cada vez que ingresen al Sitio para ver si han sufrido
+              modificaciones.
+            </li>
+            <li>
+              <b>INTERRUPCIÓN DEL SERVICIO. EXCLUSIÓN DE RESPONSABILIDAD</b
+              ><br />
+              Ziba se reserva el derecho de interrumpir, suspender o modificar
+              en cualquier momento los servicios ofrecidos en el presente Sitio,
+              ya sea en forma permanente o transitoria. No se requerirá la
+              conformidad de los Usuarios, ni será necesario aviso previo
+              alguno. Ziba no garantiza el acceso y/o uso continuado o
+              ininterrumpido de Sitio. El Sitio puede eventualmente no estar
+              disponible debido a dificultades técnicas o fallas de Internet, o
+              por cualquier otra circunstancia ajena a Ziba. No obstante lo
+              mencionado anteriormente, si la suspensión o interrupción
+              mencionada no obedeciere a razones de fuerza mayor o caso
+              fortuito, Ziba se compromete a cumplir las prestaciones a su cargo
+              que estuvieran pendientes al momento de la suspensión o
+              interrupción.<br />
+              Ziba no será responsable en ningún caso de las pérdidas, daños o
+              perjuicios de cualquier&nbsp;tipo que surjan por acceder y usar el
+              Sitio, incluyéndose, pero no limitándose, a los&nbsp;producidos en
+              los sistemas informáticos o los provocados por la introducción de
+              virus y/o&nbsp;ataques informáticos. Ziba no será responsable de
+              los daños que pudieran sufrir los&nbsp;Usuarios por un uso
+              inadecuado de este Sitio y, en modo alguno, de las
+              caídas,&nbsp;interrupciones, ausencia o defecto en las
+              telecomunicaciones. Ziba no garantiza que el Sitio se encuentre
+              libre de virus, o cualquier otro elemento que pueda llegar a dañar
+              o alterar el normal funcionamiento de un ordenador. Es
+              responsabilidad y obligación exclusiva del Usuario contar con las
+              herramientas adecuadas para detectar, desinfectar y/o prevenir
+              cualquier tipo de elementos y/o posibles daños de esta naturaleza.
+            </li>
+
+            <li>
+              <b>REGISTRACIÓN</b><br />
+              La registración es gratuita y obligatoria para poder acceder a los
+              servicios ofrecidos en el Sitio. Es obligatorio para el Usuario
+              completar el formulario en todos los campos con datos válidos y
+              verdaderos, de manera exacta y precisa. Para un correcto
+              funcionamiento del sistema, es necesario que los Usuarios
+              mantengan sus datos actualizados. Ziba podrá proceder a verificar
+              la identidad del Usuario y/o de los datos consignados por éste
+              para lo cual Ziba se reserva el derecho de solicitar algún
+              comprobante y/o dato adicional a efectos de corroborar los datos
+              de registración, así como de suspender temporal o definitivamente
+              a aquellos Usuario cuyos datos no hayan podido ser confirmados. En
+              estos casos de inhabilitación, se dará de baja la compra
+              efectuada, sin que ello genere algún derecho a resarcimiento.<br />
+              Ziba no se responsabiliza por la veracidad o certeza de los datos
+              provistos por los Usuarios y el Usuario garantiza y responde, en
+              cualquier caso, por la veracidad, exactitud, vigencia y
+              autenticidad de los datos ingresados. Asimismo, Ziba se reserva el
+              derecho de suspender temporal o definitivamente a los Usuarios en
+              caso de incumplimiento de los Términos y Condiciones, como así
+              también de rechazar solicitudes de registración.<br />
+              Los Usuarios accederán a su Cuenta Personal (la “Cuenta”) mediante
+              un nombre de Usuario y una clave personal que deberán escoger. En
+              caso de que estos datos sean olvidados por el Usuario, Ziba cuenta
+              con un servicio de ayuda para recuperarlos.<br />
+              Así como Ziba se compromete a mantener la confidencialidad de los
+              datos aportados por los Usuarios para su registro, los Usuarios se
+              comprometen a mantener la confidencialidad de su nombre y clave de
+              acceso. De conformidad con lo expresado en el párrafo anterior,
+              los Usuarios son responsables del uso que se haga de su clave y
+              deberán tener presente que si otras personas tienen o pueden tener
+              en el futuro acceso a la cuenta de e-mail consignada como propia
+              en el formulario de registración, éstas también podrían solicitar
+              su clave de acceso y nombre de Usuario. Es obligación exclusiva
+              del Usuario tomar las medidas pertinentes para que esto no suceda.
+              El Usuario se compromete a notificar inmediatamente y de manera
+              fehaciente a Ziba cualquier uso no autorizado de su Cuenta de
+              Usuario, y a mantenerlo indemne en el caso de que se esto produzca
+              algún daño a Ziba o a terceros.<br />
+            </li>
+            <li>
+              <b>DATOS PERSONALES</b><br />
+              A efectos de requerir los servicios ofrecidos en el Sitio los
+              usuarios deben brindar ciertos datos personales (nombre y
+              apellido, domicilio, cuenta de e-mail, documento de identidad) los
+              que se incorporarán a una base de datos con los alcances de la ley
+              25.326 imperante en la República Argentina.<br />
+              Al registrarse en el Sitio y formar parte de la Base General de
+              Clientes, los Usuarios aceptan que Ziba se comunique con ellos por
+              vía postal, telefónica o electrónica para enviar información que
+              la Empresa considere, a su exclusivo criterio, que pueda ser de su
+              interés, incluyendo publicidad e información sobre ofertas y
+              promociones. En caso de que los Usuarios no deseen ser contactados
+              con estos fines, podrán manifestárselo fehacientemente a Ziba,
+              quien procederá a interrumpir este tipo de comunicaciones en el
+              menor tiempo que le sea posible.
+            </li>
+
+            <li>
+              <b>CAPACIDAD</b><br />
+              Para utilizar los servicios del Sitio se requiere tener capacidad
+              legal para contratar. No podrán acceder a los servicios quienes
+              carezcan de ella, los que hayan sido suspendidos o inhabilitados,
+              ni los menores de edad. Los padres, tutores o responsables de los
+              menores de edad o incapaces que utilicen el Sitio serán
+              responsables por dicho uso, incluyendo cualquier cargo,
+              facturación o daño que se derive de él. Si el Usuario actúa en
+              representación de una persona jurídica, debe tener capacidad para
+              contratar a nombre de tal entidad y de obligar a la misma en los
+              términos de estos Términos y Condiciones.
+            </li>
+
+            <li>
+              <b>VERACIDAD DE LA INFORMACIÓN SUMINISTRADA</b><br />
+              En caso de que la información o los datos suministrados por el
+              Usuario no sean verdaderos, éste será responsable por los daños
+              que este hecho pudiera ocasionar.
+            </li>
+
+            <li>
+              <b>COOKIES</b><br />
+              El Sitio puede utilizar un sistema de seguimiento mediante
+              “cookies”, para que el acceso a la información, al pasar de página
+              en página, se realice con mayor rapidez. Estas cookies son
+              pequeños archivos que envía la página visitada y se alojan en el
+              disco duro del ordenador/smartphone/Tablet y/u otro dispositivo
+              por el cual pueda acceder el Usuario al Sitio, ocupando poco
+              espacio. Se hace saber a los Usuarios que utilizando las opciones
+              de su navegador podrán limitar o restringir según su voluntad el
+              alojamiento de estas “cookies”. El sistema podrá recoger
+              información sobre sus preferencias e intereses. En el caso de que
+              esto ocurra, la información será utilizada exclusivamente con
+              fines estadísticos para mejorar los servicios que se prestan en el
+              Sitio. Ziba aplicará, en la mayor medida en que sea posible,
+              procedimientos de disociación de la información de modo que los
+              titulares de los datos sean inidentificables.
+            </li>
+
+            <li>
+              <b>OTROS SITIOS WEB - VÍNCULOS A SITIOS DE TERCEROS</b><br />
+              Ziba no tendrá responsabilidad sobre la información proporcionada
+              por otros sitios web y las consecuencias que de ello se deriven.
+              Ziba no garantiza, avala ni respalda de ninguna forma el acceso,
+              información o contenido de cualquier otro sitio web o portal en
+              los casos que dicho acceso se efectúe desde o hacia este Sitio, ya
+              sea que dicho acceso se efectúe mediante link, banner o mediante
+              cualquier dispositivo disponible en la red. El Sitio puede
+              contener enlaces a otros sitios web lo cual no indica que sean
+              propiedad u operados por Ziba En virtud de que Ziba no
+              tiene control sobre tales sitios, no será responsable por los
+              contenidos, materiales, acciones y/o servicios prestados por los
+              mismos, ni por daños o pérdidas ocasionadas por la utilización de
+              los mismos, sean causadas directa o indirectamente. La presencia
+              de enlaces a otros sitios web no implica una sociedad, aprobación,
+              respaldo de Ziba a dichos sitios y sus contenidos. El Sitio puede
+              contener hipervínculos a los sitios web operados por otras partes
+              además de Ziba. Dichos hipervínculos se proporcionan con fines de
+              referencia únicamente. No controlamos dichos sitios web ni somos
+              responsables por su contenido o la privacidad u otras prácticas de
+              dichos sitios web. Además, depende del Usuario tomar precauciones
+              para asegurarse de que los vínculos que selecciona o el software
+              que descarga (ya sea que provenga del Sitio o de otros sitios web)
+              no contengan elementos como virus, gusanos, troyanos, defectos y
+              otros elementos de naturaleza destructiva. La incorporación de
+              hipervínculos que efectuamos a dichos sitios web no implica un
+              aval del material que allí se encuentra.
+            </li>
+
+            <li>
+              <b>DISPONIBILIDAD DE LOS PRODUCTOS OFRECIDOS</b><br />
+              La venta de los productos ofrecidos para su venta en el Sitio (los
+              “Productos”) se encuentra sujeta a disponibilidad. Considerando
+              ello, en caso de que el o los Productos seleccionados se
+              encontraren agotados o demorados, Ziba se comunicará con el
+              Usuario y lo invitará a que elija una de las siguientes opciones:
+              Continuar esperando la entrega del Producto elegido (en caso de
+              demora). Cancelación de la compra y devolución del importe por el
+              medio de pago original. Optar por un Producto alternativo que le
+              ofrezca Ziba para el caso particular. Cuando el Usuario opte por
+              cancelar la compra, se devolverá el importe abonado según el medio
+              de pago que se haya elegido oportunamente para abonar la compra.
+              En caso de que se haya pagado en dólares estadounidenses, se
+              devolverá el importe al tipo de cambio publicado por el Banco de
+              la Nación Argentina para dólar billete tipo vendedor del día de la
+              cancelación de acuerdo a lo previsto por el art. 765 del Código
+              Civil y Comercial de la Nación. En el caso de que el Usuario opte
+              por el Producto alternativo que le ofrece Ziba, éste deberá
+              contener características iguales o superiores. En caso de que el
+              Producto tenga un precio superior, el Usuario deberá abonar las
+              diferencias. Importante: para las situaciones contempladas en este
+              apartado, el Usuario tendrá un plazo de 30 días para elegir una de
+              las opciones mencionadas. En caso de que el Usuario guarde
+              silencio al respecto, Ziba &nbsp;podrá presumir que ha optado por
+              la cancelación de la compra, y procederá a la devolución del
+              importe abonado, por el medio de pago original.
+            </li>
+
+            <li>
+              <b>DEVOLUCIÓN DEL IMPORTE ABONADO</b><br />
+              En los casos mencionados en el punto anterior en que el Usuario
+              haya optado por la devolución del importe abonado, deberá tener en
+              cuenta que el reintegro puede demorar algunos días, debido a
+              plazos y cuestiones administrativas. Las devoluciones serán
+              efectuadas por el mismo medio de pago realizado y de acuerdo a los
+              términos y condiciones vigentes de cada entidad habilitada para el
+              pago de las compras realizadas en el Sitio.
+            </li>
+
+            <li>
+              <b>PROMOCIONES</b><br />
+              Las ofertas y promociones de Productos que se difundan tendrán
+              validez desde la fecha indicada hasta la de finalización de la
+              oferta. Los términos y condiciones de las mismas serán comunicados
+              en el Sitio, y estarán siempre sujetas a la existencia en stock de
+              los Productos ofrecidos. Dichas ofertas y promociones, como regla
+              general sólo se dirigen a consumidores finales, se entenderá que
+              la promoción y oferta solo se dirige a consumidores finales.
+            </li>
+
+            <li>
+              <b>PERFECCIONAMIENTO DEL CONTRATO</b><br />
+              Perfeccionamiento de los contratos celebrados a través del Sitio.
+              A través del Sitio, Ziba realiza la oferta del Producto, que podrá
+              ser aceptada a través de la aceptación de la operación utilizando
+              los mecanismos que el mismo Sitio ofrece para ello. Toda
+              aceptación de oferta quedará sujeta a la condición suspensiva de
+              que Ziba valide la transacción. En consecuencia, para toda
+              operación que se efectúe en este sitio, la confirmación y/o
+              validación o verificación por parte de Ziba, será requisito para
+              el perfeccionamiento del contrato. Para informar al Usuario acerca
+              de esta validación, Ziba deberá enviar una confirmación escrita a
+              la misma dirección electrónica que haya registrado el Usuario
+              aceptante de la oferta. El contrato se entenderá perfeccionado
+              desde el momento en que se envía esta confirmación escrita al
+              Usuario.
+            </li>
+
+            <li>
+              <b>DERECHO DE ARREPENTIMIENTO. </b><br />
+              El Usuario tendrá derecho a la revocación de la compra efectuada
+              durante el plazo de diez (10) días corridos de confirmada la
+              compra por el ente emisor. Para esto deberá notificar Ziba, dentro
+              del plazo señalado, y poner a su disposición el o los Productos
+              adquiridos. Los Productos deberán estar en el mismo estado en que
+              fueron recibidos, sin haber sido utilizados, y con el embalaje
+              original. Ziba devolverá al Usuario todos los importes recibidos
+              por el Producto. La devolución del Producto será coordinada con el
+              Usuario pudiendo ser retirada por Ziba en el mismo domicilio en el
+              que fuera entregado al Usuario lo cual podrá tener cierta demora o
+              podrá ser entregada por el Usuario en los mismos locales
+              mencionados en la Política de Cambios y Devoluciones que pueden
+              consultar en el Sitio. Asimismo, si el o los Productos presentaren
+              algún defecto de fabricación, hubieren sufrido roturas o
+              deterioros en tránsito, o fueren despachados equivocadamente, el
+              Usuario deberá comunicarse vía correo electrónico a la dirección
+              establecida en el punto 26 del presente, dentro del plazo
+              mencionado en el párrafo anterior, para que Ziba proceda, según
+              corresponda, a gestionar el re-despacho de la compra, o pasar a
+              retirar la orden. Los Productos no deben haber sido utilizados, y
+              deben encontrarse en las mismas condiciones en que fueron
+              recibidos, sin haber sido utilizados, tener las etiquetas
+              originales, estampillas en el caso que las tuviese y con el
+              embalaje original.
+            </li>
+
+            <li>
+              <b>MONEDA</b><br />
+              Todos los precios en el Sitio están expresados en pesos
+              argentinos, moneda de curso legal de la República Argentina. La
+              entidad financiera que provea los medios de pagos en los distintos
+              países hará la conversión de acuerdo a las normas imperantes en
+              dicha materia. Ziba no será responsable por los mayores costos o
+              gastos incurridos por el Usuario por costos, gastos o comisiones
+              que la entidad bancaria de Usuario pueda cobrarle a éste por la
+              compra realizada en el Sitio.
+            </li>
+
+            <li>
+              <b> MEDIOS DE PAGO</b><br />
+              Los pagos podrán realizarse con tarjeta de crédito por medio de
+              Mercado Pago (a través de las formas de pago vigentes en el sitio)
+              una vez confirmada la compra por el ente emisor. Todos los precios
+              expresados en el Sitio incluyen IVA, salvo que se indique lo
+              contrario. Asimismo, el Usuario declara que ha leído, comprendido
+              y aceptado los términos y condiciones&nbsp;de utilización de los
+              servicios de las entidades habilitadas para el pago de los
+              Productos. Ziba podrá modificar el medio de pago existente o
+              habilitar otros medios de pago para la adquisición del Producto a
+              través del Sitio, todo lo cual será informado en el Sitio. El
+              sistema de pago y los datos de su tarjeta de crédito son
+              exclusivamente gestionados por las entidades habilitadas en el
+              Sitio para el pago de los Productos. Ziba no tiene injerencia o
+              participación en dicho proceso y por ende no se responsabiliza por
+              los inconvenientes que el Usuario pudiera tener en el uso de tal
+              servicio brindado por dichas entidades.
+            </li>
+
+            <li>
+              <b>PRODUCTO. TIEMPO DE ENTREGA</b><br />
+              Los Productos adquiridos a través del Sitio se sujetarán a las
+              condiciones de entrega elegidas por el Usuario y disponibles en el
+              Sitio. La información del lugar de envío a domicilio es de
+              exclusiva responsabilidad del Usuario. No se entregarán órdenes a
+              casillas de correo (P.O. Box). Retiro en punto de entrega. Al
+              momento de la compra el Usuario podrá seleccionar el retiro del
+              Producto en alguno de los puntos de entrega informados en el Sitio
+              (“Punto de Entrega”). Esta modalidad de entrega será gratuita. En
+              caso que el Usuario transcurridos 30 días de confirmado el pedido
+              no procediera al retiro del Producto en el Punto de Entrega, Ziba
+              podrá presumir que ha optado por la resolución de la compra, y
+              procederá a la devolución del importe abonado, por el medio de
+              pago original. En caso que el envío no pueda ser entregado por
+              inexistencia del domicilio indicado por el Usuario en su pedido,
+              error en el mismo o por ausencia del destinatario en los dos
+              intentos de entrega del envío, Ziba se comunicará con el Usuario
+              vía correo electrónico para coordinar con el mismo la puesta a
+              disposición del Producto en un Punto de Entrega o coordinar un
+              nuevo envío cuyo costo será a cargo del Usuario. En caso de que el
+              Usuario guarde silencio al respecto y no responda dentro del plazo
+              de 30 días y/o se viera frustrado un segundo envío o no retirara
+              dentro de dicho plazo el Producto en el Local acordado, Ziba podrá
+              presumir que ha optado por la resolución de la compra, y procederá
+              a la devolución del importe abonado descontados los gastos de
+              envío, por el medio de pago original. El tiempo de entrega depende
+              de la disponibilidad del Producto, del tiempo de envío y de la
+              aprobación del medio de pago. Los días que se indiquen son
+              estimativos. Al realizar una compra, el Usuario recibe en su
+              casilla de correo electrónico una confirmación de que la orden de
+              pedido ha sido aceptada, junto a un número de pedido. Para
+              calcular el gasto de envío y el tiempo que demandará la entrega,
+              el Usuario puede hacer “click” en la opción “Tiempo y Costos de
+              Envío”. El tiempo de entrega de la totalidad de la orden, así como
+              su costo, será informado al Usuario antes de aceptar la compra.
+              Ziba no será responsable por demoras o falta de envío causados por
+              caso fortuito o fuerza mayor.
+            </li>
+
+            <li>
+              <b>GASTOS DE ENVÍO</b><br />
+              El Usuario será claramente informado de los costos de entrega
+              antes de realizar la compra. Estos costos son calculados en
+              función del peso total y/o el volumen total del envío, y también
+              dependen de la zona del domicilio de entrega. Los costos de envío
+              serán discriminados como ítem separado dentro de la factura. Ziba
+              está siempre trabajando para mejorar la calidad y el costo de
+              entrega para sus clientes. Por este motivo, dichos costos y las
+              políticas de envío se hallan sujetos a cambio sin previo aviso.
+            </li>
+
+            <li>
+              <b>HORARIOS Y LUGAR DE ENTREGA</b><br />
+              Los Productos serán entregados de lunes a viernes, entre las 9:00
+              y las 18:00 horas en caso que se elija la modalidad puerta a
+              puerta, con excepción de los feriados nacionales. Los Usuarios no
+              podrán elegir ni el horario ni el día en que se entregarán el o
+              los Productos adquiridos, los Productos serán entregados en el
+              domicilio indicado por el usuario. En caso que se elija la
+              modalidad retiro por tienda los Usuarios van a poder retirar sus
+              productos de lunes a viernes entre las 9:00 y las 21:00 horas,
+              presentado DNI, factura digital o impresa.
+            </li>
+
+            <li>
+              <b>CONSULTA SOBRE EL ESTADO DEL ENVÍO</b><br />
+              El estado (“tracking”) del pedido podrá ser consultado a través de
+              la herramienta/ botón web “Mis Pedidos”.
+            </li>
+
+            <li>
+              <b>FACTURACIÓN</b><br />
+              Junto con el Producto será remitida la factura correspondiente.
+              Las facturas son emitidas por SARGA S.A., con domicilio en Zamudio
+              5875, CABA, Argentina. Cuit: 30-70821818-5.
+            </li>
+
+            <li>
+              <b>CANCELACIÓN DE ÓRDENES DE COMPRA</b><br />
+              Sin perjuicio de lo establecido en el punto 16, el Usuario podrá
+              cancelar una orden. Para esto deberá ponerse en contacto con Ziba
+              dentro de las 24 horas de realizada la compra enviando un e-mail a
+              hola@ziba.com.ar. Se &nbsp;reintegrará el importe mediante el
+              medio de pago que se utilizó para abonar.
+            </li>
+
+            <li>
+              <b>DECLARACIONES</b><br />
+              Ziba no será responsable de la veracidad de la información
+              incorporada al Sitio &nbsp;por terceros. Tampoco será responsable
+              en cuanto haya sido reproducida o comunicada directamente por los
+              Usuarios del Web Sitio sin verificación por parte de Ziba Si algún
+              Usuario se viera afectado por la información a la que se alude en
+              el párrafo anterior, deberá comunicárselo a Ziba, por mail o
+              correo postal, a fin de que se proceda, en caso de corresponder, a
+              la supresión de la misma.
+            </li>
+
+            <li>
+              <b> DERECHOS RESERVADOS. PROPIEDAD INTELECTUAL</b><br />
+              Todos los derechos del presente Sitio están reservados y
+              corresponden a Ziba. El contenido del presente Sitio, incluyendo
+              aunque no limitado al texto, logos, gráficos, y todo el diseño en
+              general, así como su base de datos y software, es de propiedad de
+              Ziba o tiene derecho a usarlo en virtud de licencias de uso
+              otorgadas y se encuentra protegido por las legislaciones
+              nacionales e internacionales vigentes sobre propiedad intelectual.
+              El uso indebido y la reproducción total o parcial de dichos
+              contenidos quedan prohibidos, salvo autorización expresa y por
+              escrito de Ziba.
+            </li>
+
+            <li>
+              <b>RAZÓN SOCIAL Y DOMICILIO</b><br />
+              La razón social de la empresa es SARGA S.A., con domicilio en
+              Zamudio 5875, CABA, Argentina. Cuit: 30-70821818-5.
+            </li>
+
+            <li>
+              <b>NOTIFICACIONES</b><br />
+              Todas las notificaciones y/o comunicaciones que deban efectuarse
+              por el uso de Sitio bajo estos Términos y Condiciones Generales,
+              deberán realizarse por escrito: (i) al Usuario: mediante correo
+              electrónico, a la cuenta de correo consignada por éste, o por
+              carta documento, al domicilio declarado en el formulario de
+              registración; (ii) a SARGA S.A. a la cuenta de correo
+              hola@ziba.com.ar., o a su domicilio legal indicado en el punto
+              anterior: Zamudio 5875, CABA, Argentina.
+            </li>
+
+            <li>
+              <b>JURISDICCIÓN Y LEY APLICABLE</b><br />
+              Los presentes Términos y Condiciones se encuentran regidos sin
+              excepción y en todos sus puntos por las leyes de la República
+              Argentina y serán interpretados de acuerdo a ellas. Ante cualquier
+              diferencia, desacuerdo o conflicto derivado de la interpretación,
+              validez, alcance y/o aplicación de los presentes Términos y
+              Condiciones, los Usuarios se comunicarán con Ziba de manera
+              fehaciente, haciéndole llegar su reclamo, para que las partes
+              traten de arribar a un acuerdo.<br />
+              En caso de que no sea posible arribar a una solución, y para
+              garantizar a los consumidores el pleno acceso a la justicia, los
+              Usuarios podrán elegir y someter su reclamo a una de las
+              siguientes opciones e instancias:<br />
+              a) Sistema Nacional de Arbitraje de Consumo del Ministerio de
+              Economía y Producción de la Nación. Los procedimientos ante este
+              Sistema son gratuitos, y no es necesario contar con patrocinio
+              letrado. Asimismo, se garantiza el equilibrio entre las partes y
+              la transparencia del proceso, y los laudos emitidos por dicho
+              Tribunal tienen autoridad de cosa juzgada y son irrecurribles
+              (para saber más sobre este sistema ingresar
+              en&nbsp;http://www.mecon.gov.ar/snac)<br />
+              b) Dirección General de Defensa y Protección del Consumidor del
+              Gobierno de la Ciudad de Buenos Aires (Para saber más sobre este
+              sistema ingresar en&nbsp;http://www.buenosaires.gov.ar)<br />
+              c) Tribunales ordinarios de la Capital Federal con competencia en
+              la materia.<br />
+              Una vez elegida una de las opciones, se excluyen las demás
+              alternativas. Para el caso de que cualquiera de las opciones
+              anteriores fuese gravosa o económicamente inviable para Usuarios
+              domiciliados en el exterior, las partes, a pedido del Usuario,
+              determinarán de común acuerdo un mecanismo mutuamente conveniente
+              para resolver sus diferencias.
+            </li>
+          </ol>
+        </div>
+      </main>
+    </section>
+
+    <footer>
+      <div class="menu_footer">
+        <a class="btn" href="./sobrenosotros.html" role="button"
+          >SOBRE NOSOTROS</a
+        >
+        <a class="btn" href="./tyc.html" role="button"
+          >TERMINOS Y CONDICIONES</a
+        >
+        <a class="btn" href="./preguntasfrecuentes.html" role="button"
+          >PREGUNTAS FRECUENTES</a
+        >
+      </div>
+      <div>
+        <hr />
+        <h1 class="footer_redes_text">Seguinos</h1>
+        <hr />
+        <div class="footer_redes p-3">
+          <div class="footer_redes_text fs-2 me-3">
+            <a href="mailto:contact@ziba.com.ar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="white"
+                class="bi bi-google"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="footer_redes_text fs-2">
+            <a
+              target="_blank"
+              class="fs-2"
+              href="https://www.instagram.com/ziba_lenceriaoficial"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="white"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
