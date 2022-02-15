@@ -3,6 +3,7 @@ $.ajax({
     url: "./assets/java script/conjuntos.json",
   })
   .done(function (data) {
+    let productosHtml = "";
     data.forEach((producto) => {
       productosHtml += getProductoHtml(producto);
     });

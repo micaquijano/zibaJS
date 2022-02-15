@@ -12,24 +12,8 @@ $.ajax({
   $("#footer").html(data);
 });
 
-class Carrito {
-  productos = [];
-  agregarProducto(producto) {
-    let productoEncontrado = this.productos.findIndex(
-      (p) => p.id === producto.id
-    );
-    if (productoEncontrado !== -1) {
-      this.productos.splice(productoEncontrado, 1, producto);
-    } else {
-      this.productos.push(producto);
-    }
-  }
-  quitarProducto(producto) {
-    this.productos.slice(producto);
-  }
-}
 
-class Producto {
+/* class Producto {
   id;
   nombre;
   img;
@@ -40,43 +24,29 @@ class Producto {
     this.img = _img;
     this.precio = _precio;
   }
+} */
+
+
+function getProductoHtml(producto) {
+  return `<div class="card img-with-zoom">
+<a
+  target="_blank"
+  class="text-white"
+  href="https://wa.me/+5491126721843?text=Hola,%20quisiera%20más%20info%20de%20el%20producto%20%23${producto.id}"
+>
+  <img
+    src="${producto.img}"
+    class="card-img-top"
+    alt="..."
+  />
+  <div class="card-body">
+    <div class="card-title d-flex justify-content-around">
+      <h1 class="me-auto">${producto.precio}</h1>
+      <span class="badge bg-secondary fs-4 fit-height">${producto.id}</span>
+    </div>
+    <span class="card-text">${producto.nombre}</span>
+  </div>
+</a>
+</div>`;
 }
 
-const carrito = new Carrito();
-/* configuro / doy de alta ... todos los productos */
-const brellete1 = new Producto(
-  1999,
-  1,
-  "Corset Alemania",
-  "https://drive.google.com/file/d/1Nf2Co1erLc5EPPGAusXgxtPv2qm2dIqV/view?usp=sharing"
-);
-const brellete2 = new Producto(
-  999,
-  2,
-  "Taiwan",
-  "https://drive.google.com/file/d/1Nf2Co1erLc5EPPGAusXgxtPv2qm2dIqV/view?usp=sharing"
-);
-const brellete3 = new Producto(
-  1100,
-  3,
-  "Japon",
-  "https://drive.google.com/file/d/1Nf2Co1erLc5EPPGAusXgxtPv2qm2dIqV/view?usp=sharing"
-);
-const brellete4 = new Producto(
-  1200,
-  4,
-  "Denver",
-  "https://drive.google.com/file/d/183drjGjXYgfgXG3PhJ7rCs_8q2ZRgYm1/view?usp=sharing"
-);
-const brellete5 = new Producto(
-  1300,
-  5,
-  "Rio",
-  "https://drive.google.com/file/d/1yD1RE4UvcLlEkPI5fBcP-rM1Z9eKbAKC/view?usp=sharing"
-);
-const brellete6 = new Producto(
-  900,
-  6,
-  "Monaco",
-  "https://drive.google.com/file/d/1oanEu_lMiV466bxzI4CEm-JS9H-iSmna/view?usp=sharing"
-);
