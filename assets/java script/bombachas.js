@@ -1,6 +1,4 @@
-$(document)
-  .on("ready")
-  .ajax({
+$.ajax({
     type: "GET",
     url: "./assets/java script/bombachas.json",
   })
