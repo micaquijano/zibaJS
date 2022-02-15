@@ -17,7 +17,7 @@ class Carrito {
 
 const carrito = new Carrito();
 
-function getCarritoInfo(carrito) {
+function getCarritoInfo() {
   let html = `<table class="table">
   <thead>
     <tr>
@@ -27,7 +27,7 @@ function getCarritoInfo(carrito) {
     </tr>
   </thead>
   <tbody>`;
-  carrito.productos.forEach((producto) => {
+  productosDelCarrito.forEach((producto) => {
     html += `<tr>
   <th>${producto.id}</th>
   <td>${producto.nombre}</td>
@@ -40,6 +40,6 @@ function getCarritoInfo(carrito) {
 }
 
 $(document).on("ready", function () {
-  const modal = getCarritoInfo(carrito);
+  const modal = getCarritoInfo();
   $("#modalCarrito").html(modal);
 });
