@@ -1,38 +1,38 @@
 [
   {
     "id": 7851,
-    "precio": 1999,
-    "nombre": "Corset Alemania",
-    "img": "./assets/imagenes/bralettes/corset alemania.jpg"
+    "precio": 1100,
+    "nombre": "Arnes",
+    "img": "./assets/imagenes/bombachas/arnes.jpg"
   },
   {
     "id": 4836,
-    "precio": 2999,
-    "nombre": "Taiwan",
-    "img": "./assets/imagenes/bralettes/taiwan.jpg"
+    "precio": 700,
+    "nombre": "Culotte",
+    "img": "./assets/imagenes/bombachas/culotte.jpg"
   },
   {
     "id": 9873,
-    "precio": 1100,
-    "nombre": "Japon",
-    "img": "./assets/imagenes/bralettes/japon.jpg"
+    "precio": 500,
+    "nombre": "Less",
+    "img": "./assets/imagenes/bombachas/less.jpg"
   },
   {
     "id": 323,
-    "precio": 1200,
-    "nombre": "Denver",
-    "img": "./assets/imagenes/bralettes/denver.jpg"
+    "precio": 600,
+    "nombre": "Vedetina",
+    "img": "./assets/imagenes/bombachas/vedetina.jpg"
   },
   {
     "id": 445,
-    "precio": 1300,
-    "nombre": "Rio",
-    "img": "./assets/imagenes/bralettes/rio.jpg"
+    "precio": 700,
+    "nombre": "Tanga Less",
+    "img": "./assets/imagenes/bombachas/tangaLess.jpg"
   },
   {
     "id": 5343,
-    "precio": 900,
-    "nombre": "Monaco",
-    "img": "./assets/imagenes/bralettes/monaco.jpg"
+    "precio": 800,
+    "nombre": "Taiwan",
+    "img": "./assets/imagenes/bombachas/taiwan.jpg"
   }
 ]
