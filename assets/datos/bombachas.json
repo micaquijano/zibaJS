@@ -2,37 +2,37 @@
   {
     "id": 7851,
     "precio": 1100,
-    "nombre": "Arnes",
+    "nombre": "arnes",
     "img": "./assets/imagenes/bombachas/arnes.jpg"
   },
   {
     "id": 4836,
     "precio": 700,
-    "nombre": "Culotte",
+    "nombre": "culotte",
     "img": "./assets/imagenes/bombachas/culotte.jpg"
   },
   {
     "id": 9873,
     "precio": 500,
-    "nombre": "Less",
+    "nombre": "less",
     "img": "./assets/imagenes/bombachas/less.jpg"
   },
   {
     "id": 323,
     "precio": 600,
-    "nombre": "Vedetina",
+    "nombre": "vedetina",
     "img": "./assets/imagenes/bombachas/vedetina.jpg"
   },
   {
     "id": 445,
     "precio": 700,
-    "nombre": "Tanga Less",
+    "nombre": "tangaLess",
     "img": "./assets/imagenes/bombachas/tangaLess.jpg"
   },
   {
     "id": 5343,
     "precio": 800,
-    "nombre": "Taiwan",
+    "nombre": "taiwan",
     "img": "./assets/imagenes/bombachas/taiwan.jpg"
   }
 ]
