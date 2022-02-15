@@ -1,11 +1,11 @@
-var brelettes = require('../datos/brelettes.json');
+/* var brelettes = require('../datos/brelettes.json');
 var conjuntos = require('../datos/brelettes.json');
-var bombachas = require('../datos/bombachas.json');
+var bombachas = require('../datos/bombachas.json'); */
 
 var todosLosProductos = [];
-brelettes.forEach(b => todosLosProductos.push(b))
+/* brelettes.forEach(b => todosLosProductos.push(b))
 conjuntos.forEach(c => todosLosProductos.push(c))
-bombachas.forEach(b => todosLosProductos.push(b))
+bombachas.forEach(b => todosLosProductos.push(b)) */
 
 function agregarProductoACarrito(id) {
   console.log(id);
