@@ -51,7 +51,7 @@ function getProductoHtml(producto) {
     <span class="card-text">${producto.nombre}</span>
     <button
     type="button"
-    onClick="agregarProductoACarrito(producto)"
+    onClick="agregarProductoACarrito(${producto})"
     class="btn btn-primary"
   >Comprar</button>
   </div>
