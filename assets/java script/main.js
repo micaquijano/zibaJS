@@ -1,3 +1,15 @@
+var todosLosProductos = [];
+/* brelettes.forEach(b => todosLosProductos.push(b))
+conjuntos.forEach(c => todosLosProductos.push(c))
+bombachas.forEach(b => todosLosProductos.push(b)) */
+
+function agregarProductoACarrito(id) {
+  const productos = todosLosProductos.flat();
+  const producto = productos.find((producto) => producto.id === id);
+  console.log(productos, producto);
+  carrito.agregarProducto(producto);
+  console.log(carrito);
+}
 
 //ajax que obtiene el header
 $.ajax({
@@ -14,8 +26,8 @@ $.ajax({
   $("#footer").html(data);
 });
 
+obtenerTodosLosProductos();
 function obtenerTodosLosProductos() {
-  if(todosLosProductos.length > 0) return
   const urls = [
     ["bombachas",
     "./assets/datos/bombachas.json"],
@@ -33,10 +45,28 @@ function obtenerTodosLosProductos() {
     })
   );
 }
-var todosLosProductos = [];
-obtenerTodosLosProductos();
 
+function obtenerProductos(seccion) {
+  let productosHtml = "";
+  const productos = todosLosProductos[seccion];
+  productos.forEach((producto) => {
+    productosHtml += getProductoHtml(producto);
+  });
+  $("#productos").html(productosHtml);
+}
 
+/* class Producto {
+  id;
+  nombre;
+  img;
+  precio;
+  constructor(_precio, _id, _nombre, _img) {
+    this.id = _id;
+    this.nombre = _nombre;
+    this.img = _img;
+    this.precio = _precio;
+  }
+} */
 
 function obtenerProductos(_url) {
   $.ajax({
@@ -49,24 +79,6 @@ function obtenerProductos(_url) {
     });
     $("#productos").html(productosHtml);
   });
-}
-
-
-function obtenerProductos(seccion) {
-  let productosHtml = "";
-  const productos = todosLosProductos[seccion];
-  productos.forEach((producto) => {
-    productosHtml += getProductoHtml(producto);
-  });
-  $("#productos").html(productosHtml);
-}
-
-function agregarProductoACarrito(id) {
-  const productos = todosLosProductos.flat();
-  const producto = productos.find((producto) => producto.id === id);
-  console.log(productos, producto);
-  carrito.agregarProducto(producto);
-  console.log(carrito);
 }
 
 function getProductoHtml(producto) {
