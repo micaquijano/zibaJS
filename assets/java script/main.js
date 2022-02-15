@@ -25,19 +25,15 @@ $.ajax({
   }
 } */
 
-
-function agregarProductoACarrito(producto, id){
-  console.log(producto)
-  carrito.agregarProducto(producto)
+function agregarProductoACarrito(producto, id) {
+  console.log(producto);
+  carrito.agregarProducto(producto);
 }
 
 function getProductoHtml(producto) {
   return `<div class="card img-with-zoom col-4 m-0 p-0">
-<a
-  target="_blank"
-  class="text-white"
-  href="https://wa.me/+5491126721843?text=Hola,%20quisiera%20más%20info%20de%20el%20producto%20%23${producto.id}"
->
+
+
   <img
     src="${producto.img}"
     class="card-img-top"
@@ -49,14 +45,19 @@ function getProductoHtml(producto) {
       <span class="badge bg-secondary fs-4 fit-height">${producto.id}</span>
     </div>
     <span class="card-text">${producto.nombre}</span>
+    <a
+  target="_blank"
+  class="text-white"
+  href="https://wa.me/+5491126721843?text=Hola,%20quisiera%20más%20info%20de%20el%20producto%20%23${producto.id}"
+>
+<img src="./assets/imagenes/whatsapp.png" class="wsp-icono"
+    />
+</a>
     <button
     type="button"
     onClick="agregarProductoACarrito(${producto}, ${producto.id}); $event.stopPropagation()"
     class="btn btn-primary"
   >Comprar</button>
   </div>
-</a>
 </div>`;
 }
-
-
