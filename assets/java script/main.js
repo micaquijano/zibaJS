@@ -12,7 +12,6 @@ $.ajax({
   $("#footer").html(data);
 });
 
-
 /* class Producto {
   id;
   nombre;
@@ -28,7 +27,7 @@ $.ajax({
 
 
 function getProductoHtml(producto) {
-  return `<div class="card img-with-zoom col-4 m-0">
+  return `<div class="card img-with-zoom col-4 m-0 p-0">
 <a
   target="_blank"
   class="text-white"
@@ -49,4 +48,3 @@ function getProductoHtml(producto) {
 </a>
 </div>`;
 }
-
