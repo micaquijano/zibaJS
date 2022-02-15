@@ -7,10 +7,12 @@ var todosLosProductos = [];
 conjuntos.forEach(c => todosLosProductos.push(c))
 bombachas.forEach(b => todosLosProductos.push(b)) */
 
-function agregarProductoACarrito(id) {
-  console.log(id);
-  const producto = todosLosProductos.find(producto => producto.id === id);
+function agregarProductoACarrito(productoJSON) {
+  console.log(productoJSON);
+  const producto = JSON.parse(productoJSON)
+  console.log(producto);
   carrito.agregarProducto(producto);
+  console.log(carrito);
 }
 
 //ajax que obtiene el header
@@ -72,6 +74,7 @@ function obtenerProductos(_url) {
 
 
 function getProductoHtml(producto) {
+  productoJson = JSON.stringify(producto);
   return `<div class="card img-with-zoom col-4 m-0 p-0">
   <img src="${producto.img}" class="card-img-top"/>
   <div class="card-body">
@@ -86,7 +89,7 @@ function getProductoHtml(producto) {
     </a>
     <button
     type="button"
-    onClick="agregarProductoACarrito(${producto.id}); $event.stopPropagation()"
+    onClick="agregarProductoACarrito(${productoJson}); $event.stopPropagation()"
     class="btn btn-primary"
   >Comprar</button>
   </div>
