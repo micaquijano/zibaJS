@@ -1,16 +1,30 @@
+//ajax que obtiene el header
 $.ajax({
   type: "GET",
   url: "./header.html",
 }).done(function (data) {
   $("#header").html(data);
 });
-
+//ajax que obtiene el footer
 $.ajax({
   type: "GET",
   url: "./footer.html",
 }).done(function (data) {
   $("#footer").html(data);
 });
+
+function obtenerProductos(_url) {
+  $.ajax({
+    type: "GET",
+    url: _url,
+  }).done(function (data) {
+    let productosHtml = "";
+    data.forEach((producto) => {
+      productosHtml += getProductoHtml(producto);
+    });
+    $("#productos").html(productosHtml);
+  });
+}
 
 /* class Producto {
   id;
