@@ -41,22 +41,7 @@ function getCarritoHtml(carrito) {
 
 function getCarritoInfo(carrito) {
   const carritoHtml = getCarritoHtml(carrito);
-
-  return ` 
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ${carritoHtml}
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Finalizar compra</button>
-        </div>
-      </div>
-  </div>`;
+  return carritoHtml
 }
 
 $(document).on("ready", function () {
