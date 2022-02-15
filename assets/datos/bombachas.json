@@ -1,37 +1,37 @@
 [
   {
-    "precio": 7851,
-    "id": 1,
+    "id": 7851,
+    "precio": 1999,
     "nombre": "Corset Alemania",
     "img": "./assets/imagenes/bralettes/corset alemania.jpg"
   },
   {
-    "precio": 4836,
-    "id": 2,
+    "id": 4836,
+    "precio": 2999,
     "nombre": "Taiwan",
     "img": "./assets/imagenes/bralettes/taiwan.jpg"
   },
   {
-    "precio": 9873,
-    "id": 3,
+    "id": 9873,
+    "precio": 1100,
     "nombre": "Japon",
     "img": "./assets/imagenes/bralettes/japon.jpg"
   },
   {
-    "precio": 323,
-    "id": 4,
+    "id": 323,
+    "precio": 1200,
     "nombre": "Denver",
     "img": "./assets/imagenes/bralettes/denver.jpg"
   },
   {
-    "precio": 445,
-    "id": 5,
+    "id": 445,
+    "precio": 1300,
     "nombre": "Rio",
     "img": "./assets/imagenes/bralettes/rio.jpg"
   },
   {
-    "precio": 5343,
-    "id": 6,
+    "id": 5343,
+    "precio": 900,
     "nombre": "Monaco",
     "img": "./assets/imagenes/bralettes/monaco.jpg"
   }

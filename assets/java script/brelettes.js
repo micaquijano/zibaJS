@@ -1,6 +1,6 @@
 $.ajax({
     type: "GET",
-    url: "./assets/java script/brelettes.json",
+    url: "./assets/datos/brelettes.json",
   })
   .done(function (data) {
     let productosHtml = "";

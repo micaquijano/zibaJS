@@ -1,6 +1,6 @@
 $.ajax({
     type: "GET",
-    url: "./assets/java script/bombachas.json",
+    url: "./assets/datos/bombachas.json",
   })
   .done(function (data) {
     let productosHtml = "";

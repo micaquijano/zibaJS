@@ -1,6 +1,6 @@
 $.ajax({
     type: "GET",
-    url: "./assets/java script/conjuntos.json",
+    url: "./assets/datos/conjuntos.json",
   })
   .done(function (data) {
     let productosHtml = "";

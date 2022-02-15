@@ -28,7 +28,7 @@ $.ajax({
 
 
 function getProductoHtml(producto) {
-  return `<div class="card img-with-zoom">
+  return `<div class="card img-with-zoom col-4 m-0">
 <a
   target="_blank"
   class="text-white"
