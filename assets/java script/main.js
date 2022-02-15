@@ -1,16 +1,14 @@
 $.ajax({
-    type: "POST",
+    type: "GET",
     url: "./header.html",
-    data: null,
   })
   .done(function (data) {
     $("#header").html(data);
   });
 
 $.ajax({
-    type: "POST",
+    type: "GET",
     url: "./footer.html",
-    data: null,
   })
   .done(function (data) {
     $("#footer").html(data);
