@@ -26,6 +26,11 @@ $.ajax({
 } */
 
 
+function agregarProductoACarrito(producto){
+  console.log(producto)
+  carrito.agregarProducto(producto)
+}
+
 function getProductoHtml(producto) {
   return `<div class="card img-with-zoom col-4 m-0 p-0">
 <a
@@ -46,10 +51,12 @@ function getProductoHtml(producto) {
     <span class="card-text">${producto.nombre}</span>
     <button
     type="button"
-    onClick="carrito.agregarProducto(${producto})"
+    onClick="agregarProductoACarrito(producto)"
     class="btn btn-primary"
   >Comprar</button>
   </div>
 </a>
 </div>`;
 }
+
+
