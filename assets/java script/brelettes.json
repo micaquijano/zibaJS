@@ -1,0 +1,38 @@
+[
+    {
+      "precio": 1999,
+      "id": 1,
+      "nombre": "Corset Alemania",
+      "img": "https://drive.google.com/file/d/1Nf2Co1erLc5EPPGAusXgxtPv2qm2dIqV/view?usp=sharing"
+    },
+    {
+      "precio": 999,
+      "id": 2,
+      "nombre": "Taiwan",
+      "img": "https://drive.google.com/file/d/1Nf2Co1erLc5EPPGAusXgxtPv2qm2dIqV/view?usp=sharing"
+    },
+    {
+      "precio": 1100,
+      "id": 3,
+      "nombre": "Japon",
+      "img": "https://drive.google.com/file/d/1Nf2Co1erLc5EPPGAusXgxtPv2qm2dIqV/view?usp=sharing"
+    },
+    {
+      "precio": 1200,
+      "id": 4,
+      "nombre": "Denver",
+      "img": "https://drive.google.com/file/d/183drjGjXYgfgXG3PhJ7rCs_8q2ZRgYm1/view?usp=sharing"
+    },
+    {
+      "precio": 1300,
+      "id": 5,
+      "nombre": "Rio",
+      "img": "https://drive.google.com/file/d/1yD1RE4UvcLlEkPI5fBcP-rM1Z9eKbAKC/view?usp=sharing"
+    },
+    {
+      "precio": 900,
+      "id": 6,
+      "nombre": "Monaco",
+      "img": "https://drive.google.com/file/d/1oanEu_lMiV466bxzI4CEm-JS9H-iSmna/view?usp=sharing"
+    }
+  ]

@@ -1,65 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome = 1" />
+    <meta name="ziba" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/imagenes/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome = 1" />
-  <meta name="ziba" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./assets/imagenes/logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Roboto:wght@100;400;700&display=swap"
-    rel="stylesheet" />
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/dist/jquery.min.js"></script>
+    <title>Ziba</title>
+  </head>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <script src="assets/dist/jquery.min.js"></script>
-  <title>Ziba</title>
-</head>
+  <body>
+    <div id="header"></div>
 
-<body>
+    <section class="customer p-3">
+      <main id="customer">
+        <h1>INGRESE SUS DATOS</h1>
+        <div class="contact-card">
+          <div id="form">
+            <div class="column-1"></div>
+            <div class="column-2">
+              <label class="form-label mb-1" for="name"
+                >Nombre y Apellido</label
+              >
+              <input
+                class="form-control name"
+                type="text"
+                name="name"
+                id="name"
+              />
 
-  <div id="header"></div>
+              <label class="form-label mb-1" for="phone">Teléfono</label>
+              <input
+                class="form-control name"
+                type="phone"
+                name="phone"
+                id="phone"
+              />
 
-  <section class="customer p-3" >
-    <main id="customer">
-    <h1>INGRESE SUS DATOS</h1>
-    <div class="contact-card">
+              <label class="form-label mb-1" for="adress">Dirección</label>
+              <input
+                class="form-control"
+                type="adress"
+                name="adress"
+                id="adress"
+              />
 
-      <div id="form">
-        <div class="column-1">
+              <button class="btn mt-3" id="enviarInfo">enviar Info</button>
+            </div>
+          </div>
         </div>
-        <div class="column-2">
-          <label class="form-label mb-1" for="name">Nombre y Apellido</label>
-          <input class="form-control name" type="text" name="name" id="name">
+      </main>
+    </section>
 
-          <label class="form-label mb-1" for="phone">Teléfono</label>
-          <input class="form-control name" type="phone" name="phone" id="phone">
-
-          <label class="form-label mb-1" for="adress">Dirección</label>
-          <input class="form-control" type="adress" name="adress" id="adress">
-
-          <button class="btn mt-3" id="enviarInfo">enviar Info</button>
-        </div>
-      </div>
-    </div>
-  </main>
-  </section>
-
-  <div id="footer"></div>
-
-</body>
-<!-- <script src="./assets/java script/dom.js"></script> -->
-<!-- <script src="./assets/java script/dom_jquery.js"></script> -->
-<script src="./assets/java script/main.js"></script>
-
-
-
+    <div id="footer"></div>
+  </body>
+  <!-- <script src="./assets/java script/dom.js"></script> -->
+  <!-- <script src="./assets/java script/dom_jquery.js"></script> -->
+  <script src="./assets/java script/main.js"></script>
 </html>
