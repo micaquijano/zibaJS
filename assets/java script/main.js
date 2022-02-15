@@ -9,6 +9,7 @@ function agregarProductoACarrito(id) {
     "productosDelCarrito",
     JSON.stringify(productosDelCarrito)
   );
+  actualizarInfoCarrito()
 }
 
 function agregarProducto(producto) {
@@ -67,7 +68,7 @@ function getProductoHtml(producto) {
     </a>
     <button
     type="button"
-    onClick="agregarProductoACarrito(${producto.id}); $event.stopPropagation()"
+    onClick="agregarProductoACarrito(${producto.id})"
     class="btn btn-primary"
   >Comprar</button>
   </div>

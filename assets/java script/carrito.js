@@ -39,7 +39,9 @@ function getCarritoInfo() {
   return html;
 }
 
-$(document).on("ready", function () {
+$(document).on("ready", actualizarInfoCarrito());
+
+function actualizarInfoCarrito() {
   const modal = getCarritoInfo();
   $("#modalCarrito").html(modal);
-});
+}
