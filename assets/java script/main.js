@@ -44,6 +44,11 @@ function getProductoHtml(producto) {
       <span class="badge bg-secondary fs-4 fit-height">${producto.id}</span>
     </div>
     <span class="card-text">${producto.nombre}</span>
+    <button
+    type="button"
+    onClick="carrito.agregarProducto(${producto})"
+    class="btn btn-primary"
+  >Comprar</button>
   </div>
 </a>
 </div>`;
