@@ -1,19 +1,3 @@
-/* var brelettes = require('../datos/brelettes.json');
-var conjuntos = require('../datos/brelettes.json');
-var bombachas = require('../datos/bombachas.json'); */
-
-var todosLosProductos = [];
-/* brelettes.forEach(b => todosLosProductos.push(b))
-conjuntos.forEach(c => todosLosProductos.push(c))
-bombachas.forEach(b => todosLosProductos.push(b)) */
-
-function agregarProductoACarrito(productoJSON) {
-  console.log(productoJSON);
-  const producto = JSON.parse(productoJSON)
-  console.log(producto);
-  carrito.agregarProducto(producto);
-  console.log(carrito);
-}
 
 //ajax que obtiene el header
 $.ajax({
@@ -30,6 +14,30 @@ $.ajax({
   $("#footer").html(data);
 });
 
+function obtenerTodosLosProductos() {
+  if(todosLosProductos.length > 0) return
+  const urls = [
+    ["bombachas",
+    "./assets/datos/bombachas.json"],
+    ["brelettes",
+    "./assets/datos/brelettes.json"],
+    ["conjuntos",
+    "./assets/datos/conjuntos.json"],
+  ];
+  urls.forEach(([key, url]) =>
+    $.ajax({
+      type: "GET",
+      url: url,
+    }).done(function (data) {
+      data.forEach((producto) => todosLosProductos[key].push(producto));
+    })
+  );
+}
+var todosLosProductos = [];
+obtenerTodosLosProductos();
+
+
+
 function obtenerProductos(_url) {
   $.ajax({
     type: "GET",
@@ -43,38 +51,25 @@ function obtenerProductos(_url) {
   });
 }
 
-/* class Producto {
-  id;
-  nombre;
-  img;
-  precio;
-  constructor(_precio, _id, _nombre, _img) {
-    this.id = _id;
-    this.nombre = _nombre;
-    this.img = _img;
-    this.precio = _precio;
-  }
-} */
 
-
-function obtenerProductos(_url) {
-  $.ajax({
-    type: "GET",
-    url: _url,
-  }).done(function (data) {
-    let productosHtml = "";
-    data.forEach((producto) => {
-      productosHtml += getProductoHtml(producto);
-    });
-    $("#productos").html(productosHtml);
+function obtenerProductos(seccion) {
+  let productosHtml = "";
+  const productos = todosLosProductos[seccion];
+  productos.forEach((producto) => {
+    productosHtml += getProductoHtml(producto);
   });
+  $("#productos").html(productosHtml);
 }
 
-
-
+function agregarProductoACarrito(id) {
+  const productos = todosLosProductos.flat();
+  const producto = productos.find((producto) => producto.id === id);
+  console.log(productos, producto);
+  carrito.agregarProducto(producto);
+  console.log(carrito);
+}
 
 function getProductoHtml(producto) {
-  productoJson = JSON.stringify(producto);
   return `<div class="card img-with-zoom col-4 m-0 p-0">
   <img src="${producto.img}" class="card-img-top"/>
   <div class="card-body">
@@ -89,7 +84,7 @@ function getProductoHtml(producto) {
     </a>
     <button
     type="button"
-    onClick="agregarProductoACarrito(${productoJson}); $event.stopPropagation()"
+    onClick="agregarProductoACarrito(${producto.id}); $event.stopPropagation()"
     class="btn btn-primary"
   >Comprar</button>
   </div>
