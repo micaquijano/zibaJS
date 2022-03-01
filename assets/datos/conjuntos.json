@@ -57,7 +57,7 @@
     "id": 323,
     "precio": 2200,
     "nombre": "Conjunto Toronto",
-    "img": "./assets/imagenes/conjuntos/toronto.jpg"
+    "img": "./assets/imagenes/conjuntos/toronto.webp" 
   },
   {
     "id": 445,
