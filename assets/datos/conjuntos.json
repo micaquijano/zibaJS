@@ -3,72 +3,72 @@
     "id": 7851,
     "precio": 1500,
     "nombre": "Conjunto Grecia",
-    "img": "./assets/imagenes/cojuntos/grecia.jpg"
+    "img": "./assets/imagenes/conjuntos/grecia.jpg"
   },
   {
     "id": 4836,
     "precio": 2000,
     "nombre": "Conjunto Havana",
-    "img": "./assets/imagenes/cojuntos/havana.jpg"
+    "img": "./assets/imagenes/conjuntos/havana.jpg"
   },
   {
     "id": 9873,
     "precio": 1300,
     "nombre": "Conjunto turquia",
-    "img": "./assets/imagenes/cojuntos/turquia.jpg"
+    "img": "./assets/imagenes/conjuntos/turquia.jpg"
   },
   {
     "id": 323,
     "precio": 1700,
     "nombre": "Conjunto Malasia",
-    "img": "./assets/imagenes/cojuntos/malasia.jpg"
+    "img": "./assets/imagenes/conjuntos/malasia.jpg"
   },
   {
     "id": 445,
     "precio": 1400,
     "nombre": "Conjunto India",
-    "img": "./assets/imagenes/cojuntos/india.jpg"
+    "img": "./assets/imagenes/conjuntos/india.jpg"
   },
   {
     "id": 5343,
     "precio": 1900,
     "nombre": "Monaco Tailandia",
-    "img": "./assets/imagenes/cojuntos/tailandia.jpg"
+    "img": "./assets/imagenes/conjuntos/tailandia.jpg"
   },
   {
     "id": 323,
     "precio": 2200,
     "nombre": "Conjunto Moscu",
-    "img": "./assets/imagenes/cojuntos/moscu.jpg"
+    "img": "./assets/imagenes/conjuntos/moscu.jpg"
   },
   {
     "id": 445,
     "precio": 1400,
     "nombre": "Conjunto Rumania",
-    "img": "./assets/imagenes/cojuntos/rumania.jpg"
+    "img": "./assets/imagenes/conjuntos/rumania.jpg"
   },
   {
     "id": 5343,
     "precio": 2600,
     "nombre": "Monaco Italia",
-    "img": "./assets/imagenes/cojuntos/italia.jpg"
+    "img": "./assets/imagenes/conjuntos/italia.jpg"
   },
   {
     "id": 323,
     "precio": 2200,
     "nombre": "Conjunto Toronto",
-    "img": "./assets/imagenes/cojuntos/toronto.jpg"
+    "img": "./assets/imagenes/conjuntos/toronto.jpg"
   },
   {
     "id": 445,
     "precio": 3100,
     "nombre": "Conjunto Otawa",
-    "img": "./assets/imagenes/cojuntos/otawa.jpg"
+    "img": "./assets/imagenes/conjuntos/otawa.jpg"
   },
   {
     "id": 5343,
     "precio": 2500,
     "nombre": "Monaco Kenia",
-    "img": "./assets/imagenes/cojuntos/kenia.jpg"
+    "img": "./assets/imagenes/conjuntos/kenia.jpg"
   }
 ]

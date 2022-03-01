@@ -3,6 +3,7 @@ body {
   background-color: #000;
   font-family: "Roboto", sans-serif; }
 
+
 .collapse:not(.show) {
   justify-content: flex-end; }
 
@@ -221,7 +222,9 @@ a {
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease; }
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+ border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+ border-radius 0.15s ease; }
 
 .card-group {
   display: flex;
@@ -255,7 +258,8 @@ a {
   height: fit-content; }
 
 .card-text {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+ "Lucida Sans", Arial, sans-serif; }
 
 .list-group-item {
   color: #000;
